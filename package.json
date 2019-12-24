@@ -1,0 +1,8 @@
+{
+  "name": "vue-cz-aggregate",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/chenzhe555/vue-cz-aggregate",
+  "author": "chenzhe@meicai.cn <chenzhe@meicai.cn>",
+  "license": "MIT"
+}
