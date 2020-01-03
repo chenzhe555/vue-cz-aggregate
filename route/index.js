@@ -16,6 +16,7 @@ const getRouter = function (configs = []) {
         }
         next();
     });
+    return router;
 }
 
 export {
