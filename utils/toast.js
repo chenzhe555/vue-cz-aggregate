@@ -12,7 +12,7 @@ export default class ToastManager {
      */
     // eslint-disable-next-line no-unused-vars
     static showSuccess(message = '', params = {}) {
-        if (message.length > 0) Message(Object.assign({}, defaultOptions, { message, type: 'success' }, params));
+        if (Message && message.length > 0) Message(Object.assign({}, defaultOptions, { message, type: 'success' }, params));
     }
 
     /**
@@ -22,7 +22,7 @@ export default class ToastManager {
      */
     // eslint-disable-next-line no-unused-vars
     static showNotice(message = '', params = {}) {
-        if (message.length > 0) Message(Object.assign({}, defaultOptions, { message, type: 'warning' }, params));
+        if (Message && message.length > 0) Message(Object.assign({}, defaultOptions, { message, type: 'warning' }, params));
     }
 
     /**
@@ -32,7 +32,7 @@ export default class ToastManager {
      */
     // eslint-disable-next-line no-unused-vars
     static showMessage(message = '', params = {}) {
-        if (message.length > 0) Message(Object.assign({}, defaultOptions, { message, type: 'info' }, params));
+        if (Message && message.length > 0) Message(Object.assign({}, defaultOptions, { message, type: 'info' }, params));
     }
 
     /**
@@ -42,6 +42,6 @@ export default class ToastManager {
      */
     // eslint-disable-next-line no-unused-vars
     static showFail(message = '', params = {}) {
-        if (message.length > 0) Message(Object.assign({}, defaultOptions, { message, type: 'error' }, params));
+        if (Message && message.length > 0) Message(Object.assign({}, defaultOptions, { message, type: 'error' }, params));
     }
 }

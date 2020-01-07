@@ -18,7 +18,7 @@ export default class LoadingManager {
      * @param {Object} params
      */
     static hide(params = {}) {
-        loadingInstance.close();
+        loadingInstance && loadingInstance.close();
         loadingInstance = null;
     }
 }
